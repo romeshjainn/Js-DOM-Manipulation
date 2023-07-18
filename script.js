@@ -67,8 +67,8 @@ const plants = [leafD, leafE];
 plants.forEach(function (plant) {
   plant.classList.add("plant");
   plant.style.backgroundColor = "green";
-  plant.style.height = "40px";
-  plant.style.width = "40px";
+  plant.style.height = "15%";
+  plant.style.aspectRatio = "1";
   plant.style.position = "absolute";
   plant.style.right = "10%";
   plant.style.bottom = "43%";
