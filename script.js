@@ -36,4 +36,10 @@ soilArea.style.height = "30%";
 soilArea.style.position = "absolute";
 soilArea.style.bottom = "0";
 
+// Styling grass area 
+grassArea.style.backgroundColor = "green";
+grassArea.style.width = "100%";
+grassArea.style.height = "15%";
+grassArea.style.position = "absolute";
+grassArea.style.bottom = "30%";
 
