@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const universal = document.querySelectorAll("*");
+      for (let i = 0; i < universal.length; i++) {
+        universal[i].style.margin = "0";
+        universal[i].style.padding = "0";
+        universal[i].style.boxSizing = "border-box";
+      }
+
+      const body = document.querySelector("body");
+      body.style.backgroundColor = "yellow";
+      body.style.height = "100vh";
+      body.style.display = "grid";
+      body.style.justifyContent = "center"
+      body.style.gridGap ="2px solid"
+      body.style.gridTemplateColumns = "repeat(5, 20%)"
+
+      for (let i = 0; i < 36; i++) {
+        let boxes = document.createElement("div");
+        boxes.style.height = "30px";
+        boxes.style.aspectRatio = "1";
+        boxes.style.backgroundColor = "red";
+        // body.appendChild(boxes);
+        body.prepend(boxes);
+      }
+    </script>
+  </body>
 </html>
+
+<body>
+</body>
