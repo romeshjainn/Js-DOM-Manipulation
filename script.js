@@ -9,9 +9,20 @@ const leafB = document.createElement("div");
 const leafC = document.createElement("div");
 const leafD = document.createElement("div");
 const leafE = document.createElement("div");
+const leafF = document.createElement("div");
 
 // Appending all elements to the body
-const arr = [soilArea, grassArea, wood, leafA, leafB, leafC, leafD, leafE];
+const arr = [
+  soilArea,
+  grassArea,
+  wood,
+  leafA,
+  leafB,
+  leafC,
+  leafD,
+  leafE,
+  leafF,
+];
 
 arr.forEach(function (elm) {
   body.appendChild(elm);
@@ -43,7 +54,7 @@ grassArea.style.height = "15%";
 grassArea.style.position = "absolute";
 grassArea.style.bottom = "30%";
 
-// styling wood
+// Styling wood
 wood.style.backgroundColor = "brown";
 wood.style.width = "5%";
 wood.style.height = "30%";
@@ -51,7 +62,7 @@ wood.style.position = "absolute";
 wood.style.bottom = "45%";
 wood.style.left = "10%";
 
-// lead d and leaf e
+// Styling leafD and leafE
 const plants = [leafD, leafE];
 plants.forEach(function (plant) {
   plant.classList.add("plant");
@@ -68,5 +79,30 @@ leafE.classList.add("plantTop");
 
 let plantTop = document.getElementsByClassName("plantTop");
 for (let i = 0; i < plantTop.length; i++) {
-    plantTop[i].style.bottom = "53%"
+  plantTop[i].style.bottom = "53%";
 }
+
+// Tree
+let tree = [leafA, leafB, leafC, leafF];
+
+tree.forEach(function (treeLeaf) {
+  treeLeaf.style.backgroundColor = "green";
+  treeLeaf.style.height = "50px";
+  treeLeaf.style.width = "50px";
+  treeLeaf.style.borderRadius = "50%";
+  treeLeaf.style.position = "absolute";
+  treeLeaf.style.left = "8%";
+  treeLeaf.style.bottom = "73%";
+});
+
+// Styling leafB
+leafB.style.left = "12%";
+leafB.style.bottom = "65%";
+
+// Styling leafC
+leafC.style.left = "4%";
+leafC.style.bottom = "65%";
+
+// Styling leafF
+leafF.style.left = "8%";
+leafF.style.bottom = "65%";
