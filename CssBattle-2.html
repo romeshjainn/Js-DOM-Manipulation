@@ -20,20 +20,26 @@
       body.style.display = "grid";
       body.style.justifyContent = "center";
       body.style.gridGap = "2px solid";
-      body.style.gridTemplateColumns = "repeat(6, 20%)";
-      body.style.gridTemplateRows = "repeat(6, 20%)";
-
       body.style.placeItems = "center";
+
+      let container = document.createElement("div");
+      container.style.height = "300px";
+      container.style.aspectRatio = "1"
+      container.style.backgroundColor = "blue";
+      container.style.display = "flex";
+      container.style.flexWrap = "wrap";
+
+      body.appendChild(container)
 
       for (let i = 0; i < 36; i++) {
         let boxes = document.createElement("div");
         boxes.style.height = "30px";
         boxes.style.aspectRatio = "1";
         boxes.style.backgroundColor = "red";
-        body.prepend(boxes);
+        container.appendChild(boxes);
 
         if (i % 2 === 0) {
-          boxes.style.backgroundColor = "blue";
+          // boxes.style.backgroundColor = "blue";
         }
       }
     </script>
