@@ -87,8 +87,8 @@ let tree = [leafA, leafB, leafC, leafF];
 
 tree.forEach(function (treeLeaf) {
   treeLeaf.style.backgroundColor = "green";
-  treeLeaf.style.height = "50px";
-  treeLeaf.style.width = "50px";
+  treeLeaf.style.height = "20%";
+  treeLeaf.style.aspectRatio = "1";
   treeLeaf.style.borderRadius = "50%";
   treeLeaf.style.position = "absolute";
   treeLeaf.style.left = "8%";
@@ -96,13 +96,12 @@ tree.forEach(function (treeLeaf) {
 });
 
 // Styling leafB
-leafB.style.left = "12%";
+leafB.style.left = "4%";
 leafB.style.bottom = "65%";
 
 // Styling leafC
-leafC.style.left = "4%";
+leafC.style.left = "12%";
 leafC.style.bottom = "65%";
 
 // Styling leafF
-leafF.style.left = "8%";
 leafF.style.bottom = "65%";
