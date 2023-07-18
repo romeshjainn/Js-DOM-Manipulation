@@ -43,3 +43,11 @@ grassArea.style.height = "15%";
 grassArea.style.position = "absolute";
 grassArea.style.bottom = "30%";
 
+// styling wood
+wood.style.backgroundColor = "brown";
+wood.style.width = "5%";
+wood.style.height = "30%";
+wood.style.position = "absolute";
+wood.style.bottom = "45%"
+wood.style.left = "10%";
+
