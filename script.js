@@ -14,17 +14,26 @@ const leafE = document.createElement("div");
 const arr = [soilArea, grassArea, wood, leafA, leafB, leafC, leafD, leafE];
 
 arr.forEach(function (elm) {
-    body.appendChild(elm);
+  body.appendChild(elm);
 });
 
 // Basic reset
 universal.forEach(function (element) {
-    element.style.margin = "0";
-    element.style.padding = "0";
-    element.style.boxSizing = "border-box";
+  element.style.margin = "0";
+  element.style.padding = "0";
+  element.style.boxSizing = "border-box";
 });
 
 // Styling body
 body.style.height = "100vh";
 body.style.backgroundColor = "lightblue";
+body.style.position = "relative"; // Added position property
+
+// Styling soil area
+soilArea.style.backgroundColor = "brown";
+soilArea.style.width = "100%";
+soilArea.style.height = "30%";
+soilArea.style.position = "absolute";
+soilArea.style.bottom = "0";
+
 
