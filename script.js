@@ -104,4 +104,4 @@ leafC.style.left = "12%";
 leafC.style.bottom = "65%";
 
 // Styling leafF
-leafF.style.bottom = "65%";
+leafF.style.bottom = "60%";
