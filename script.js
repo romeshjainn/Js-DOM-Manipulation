@@ -36,7 +36,7 @@ soilArea.style.height = "30%";
 soilArea.style.position = "absolute";
 soilArea.style.bottom = "0";
 
-// Styling grass area 
+// Styling grass area
 grassArea.style.backgroundColor = "green";
 grassArea.style.width = "100%";
 grassArea.style.height = "15%";
@@ -48,6 +48,25 @@ wood.style.backgroundColor = "brown";
 wood.style.width = "5%";
 wood.style.height = "30%";
 wood.style.position = "absolute";
-wood.style.bottom = "45%"
+wood.style.bottom = "45%";
 wood.style.left = "10%";
 
+// lead d and leaf e
+const plants = [leafD, leafE];
+plants.forEach(function (plant) {
+  plant.classList.add("plant");
+  plant.style.backgroundColor = "green";
+  plant.style.height = "40px";
+  plant.style.width = "40px";
+  plant.style.position = "absolute";
+  plant.style.right = "10%";
+  plant.style.bottom = "43%";
+  plant.style.borderRadius = "50%";
+});
+
+leafE.classList.add("plantTop");
+
+let plantTop = document.getElementsByClassName("plantTop");
+for (let i = 0; i < plantTop.length; i++) {
+    plantTop[i].style.bottom = "53%"
+}
