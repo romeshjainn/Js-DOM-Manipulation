@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>layout</title>
-  </head>
-  <body>
-    <script>
-      let universal = document.querySelectorAll("*");
-      for (let i = 0; i < universal.length; i++) {
-        universal[i].style.margin = "0";
-        universal[i].style.padding = "0";
-      }
-
-      let body = document.querySelector("body");
-      body.style.backgroundColor = "red";
-      body.style.height = "100vh";
-      body.style.display = "grid";
-      body.style.placeItems = "center";
-      let container = document.createElement("div");
-      container.style.width = "60%";
-      container.style.height = "100%";
-      container.style.backgroundColor = "yellow";
-      container.style.display = "grid";
-      container.style.gridTemplateColumns = " 5 20% ";
-      container.style.gridTemplateRows = " 5 20% ";
-      body.appendChild(container);
-
-      for (let i = 0; i < 36; i++) {
-        let boxes = document.createElement("div");
-        boxes.style.backgroundColor = "white";
-        container.appendChild(boxes);
-        boxes.classList.add("hello");
-      }
-      for (let i = 0; i < boxes.length; i += 2) {
-        boxes.style.backgroundColor = "blue";
-      }
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    
+</body>
 </html>
